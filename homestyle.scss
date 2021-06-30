@@ -140,11 +140,18 @@ footer {
     background-color: $charcoal;
     display: flex;
     justify-content: center;
+    width: 100%;
+    p {margin: 0;}
 }
 
 .newadventure {
     flex-basis: 75%;
     padding-right: 50px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
 }
 
 .button {
@@ -158,7 +165,7 @@ footer {
     top: 1rem;
 }
 
-::placeholder {
+::placeholder, textarea {
     font-family: "Lato";
     font-weight: 300;
     font-size: 1.25rem;
@@ -172,7 +179,7 @@ label {
     visibility: hidden;
 }
 
-input {
+input, textarea {
     flex-basis: 45%;
     flex-grow: 0;
     background-color: $camogreen;
@@ -182,7 +189,10 @@ input {
     border-left: none;
     border-right: none;
     border-bottom: 2px solid $marigold;
+    resize: none;
+    color: gray;
 }
+
 
 form {
 display: flex;
@@ -192,18 +202,54 @@ justify-content: space-between;
     flex-grow: 1;
 }
 }
+form.wrapper {
+    padding-left: 0px;
+}
 
 #commenttext {
     height: 20rem;
     flex-basis: 100%;
     border: 2px solid $marigold;
     margin-top: 2rem;
+    text-align: start;
+}
+
+.whiteh3 {
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+#sidebar {
+    position: absolute;
+    left: calc(100% - 400px);
+    width: 400px;
+    top: 800px;
+    background-color: $mudgreen;
+    padding-left: 20px;
+    ul {
+        list-style: none;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    span {
+        color: $marigold;
+        margin-right: 1rem;
+    }
+    img {
+        margin-top: -25px;
+        position: relative;
+        right: -12px;
+    }
 }
 
 #homepage {
-
     header {
         background-image: url("home-image-1.jpg");
+        .wrapper {
+            padding: 10px 10%;
+        }
         div {        
             padding: 100px 50px;}
         img {
@@ -264,9 +310,70 @@ justify-content: space-between;
     p {
         margin-bottom: 1rem;
     }
+    footer p{
+        margin-bottom: 0;
+    }
+    #leftbackground {
+        margin-top: -400px;
+        margin-left: -166px;
+        width: 1100px;
+        height: 720.7px;
+        background-color: $mudgreen;
+        img {
+            width: 1075px;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+    }
 }
 
-#leftalign {
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    header {
+        height: 42.5rem;
+        background-image: url("contact-image-1.jpg");
+        flex-basis: 100%;
+    }
+    form {
+        width: 100%;
+        background-color: $charcoal;
+        input {background-color: $charcoal;}
+        textarea {background-color: $charcoal;}
+
+
+    }
+
+    #leftbackground {
+        margin-top: -400px;
+        margin-left: -166px;
+        width: 100%;
+        background-color: $marigold;
+        > div {
+            background-color: $charcoal;
+            position: relative;
+            top: -25px;
+            left: -25px;
+            padding: 50px;
+        }
+    }
+
+    .leftalign {
+        width: 75%;
+        border: none;
+        padding-right: 0px;
+        padding-left: 20%;
+        
+    }
+    section:not(.wrapper) {
+        margin-top: 100px;
+    }
+    #spaceme {
+        margin: 1rem 0px;
+    }
+}
+
+.leftalign {
     width: 1125px;
     border-bottom: 2px solid $mudgreen;
     border-right: 2px solid $mudgreen;
@@ -281,18 +388,7 @@ justify-content: space-between;
     }
 }
 
-#headergreen {
-    margin-top: -400px;
-    margin-left: -166px;
-    width: 1100px;
-    height: 720.7px;
-    background-color: $mudgreen;
-    img {
-        width: 1075px;
-        margin-top: -50px;
-        margin-left: -50px;
-    }
-}
+
 
 #comments {
     width: 1125px;

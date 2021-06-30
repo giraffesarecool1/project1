@@ -16,19 +16,19 @@
             <div class="wrapper">
                 <nav>
                     <ul>
-                        <li><a>Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a>About</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section class="wrapper" id="leftalign">
+        <section class="wrapper leftalign">
             <div id="blogleft">
                 <div>
                     <h2>Blog</h2>
-                    <div id="headergreen"><img src="post-image.jpg" alt="gong"></div>
+                    <div id="leftbackground"><img src="post-image.jpg" alt="gong"></div>
                 </div>
                 <div>
                     <h3>Come and discover our space</h3>
@@ -42,7 +42,7 @@
             </div>
         </section>
         <section class="wrapper" id="comments">
-            <h3 id="whiteh3">Comments:</h3>
+            <h3 class="whiteh3">Comments:</h3>
             <div>
                 <img src="comment-image.jpg">
                 <div>
@@ -57,7 +57,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim optio porro aperiam ipsam consequuntur aut asperiores nisi sequi nemo quae ipsa non et, quaerat dignissimos eos. Modi quam praesentium voluptatibus.</p>
                 </div>
         </div>
-        </div>
+
 
         <form class="wrapper">
             <label for="name">Name</label>
@@ -65,7 +65,21 @@
             <label for="email">Email Address</label>
             <input type="email" name="email" id="email" placeholder="Email Address" required>
             <label for="commenttext">Comment</label>
-            <input type="text" name="commenttext" id="commenttext" placeholder="Comment" required>
+            <textarea type="text" name="commenttext" id="commenttext" required>Comment</textarea>
             <button type="button" class="button">Post Comment</button>
         </form>
+        <section id="sidebar">
+            <img src="sidebar-image.jpg" alt="cairn">
+            <h3 class="whiteh3">Our mission</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo ex magni eveniet, at iusto modi qui commodi alias, minima dolor, velit obcaecati aut! Dolorum animi laborum consectetur impedit veritatis!</p>
+            <h3 class="whiteh3">Recent posts</h3>
+            <ul>
+                <li><p><span>•</span>Donec facilis tortor ut</p></li>
+                <li><p><span>•</span>Augue lacinae at viverra</p></li>
+                <li><p><span>•</span>Semper sed sapien metus</p></li>
+                <li><p><span>•</span>Scelerisque nec pharetra</p></li>
+            </ul>
+        </section>
+    </section>
+        <footer><p>Copyright @ 2019 HackerYou</p></footer>
     </body>
