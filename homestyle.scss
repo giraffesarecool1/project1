@@ -1,0 +1,318 @@
+@import 'setup';
+@import 'globalvariables';
+
+html {
+    background-color: $camogreen;
+    font-size: 16px;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    div{
+        flex: 1 1 40%;
+        #logo {
+            font-family: "Dokdo";
+            font-size: 2.59375rem;
+            text-align: center;
+            color: $marigold;
+            padding: 5px 0px;
+            width: 100px;
+         }
+        nav {
+            ul{
+                font-family: "Lato";
+                font-size: 1.25rem;
+                font-weight: bold;
+                text-align: center;
+                line-height: 2rem;
+                letter-spacing: 0.125rem;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                color: white;
+                a:hover {
+                    color: $marigold;
+                }
+        }
+        }
+    }
+    .wrapper {
+        padding-top: 10px;
+    }
+}
+p {
+    margin: 0px 0px;
+    color: white;
+    font: $pfont;
+    line-height: 2rem;
+    letter-spacing: 0.125rem;
+}
+
+
+
+ h1 {
+        font-family: 'Dokdo';
+        color: $marigold;
+        font-size: 7.1875rem;
+        margin: 0;
+ }
+h2 {
+    color: $marigold;
+    font-size: 6.5625rem;
+    font-family: 'Dokdo';
+    line-height: 4.35rem;
+    letter-spacing: 0.68125rem;
+}
+ h3 {
+    color: $marigold;
+    font-size: 2.8125rem;
+    font-family: 'Dokdo';
+    line-height: 58px;
+    letter-spacing: 0.30625rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+ .wrapper{
+    padding: 100px 10%;
+}
+
+#bannerimage {
+    width: 100%;
+}
+
+ .gray {
+     background-color: $charcoal;
+ }
+
+ .spaced {
+    justify-content: space-around;
+ }
+
+ h4 {
+     font-family: 'Dokdo';
+     color: $marigold;
+     line-height: 3.625rem;
+     letter-spacing: 0.26875rem;
+     margin-top: 1rem;
+     margin-bottom: 0.1rem;
+     font-size: 2.5rem;
+ }
+
+ #leftmarigoldbackground {
+    display: flex;
+    div {
+        flex-basis: 670px;
+        height: 420px;
+    }
+    img{
+        top: -25px;
+        left: -25px;
+ }
+}
+
+ #rightmarigoldbackground {
+    justify-content: flex-end; 
+    display: flex;
+    div {
+        position: relative;
+        display: flex;
+        flex-basis: 670px;
+        height: 420px;
+        bottom: -70px;
+        img {
+            position: relative;
+            right: -25px;
+            bottom: 25px;
+        }
+ }
+}
+
+.centereverything>div{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    p {text-align: left;}
+}
+
+footer {
+    background-color: $charcoal;
+    display: flex;
+    justify-content: center;
+}
+
+.newadventure {
+    flex-basis: 75%;
+    padding-right: 50px;
+}
+
+.button {
+    background-color: $mudgreen;
+    font-family: Dokdo;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.6rem;
+    position: relative;
+    top: 1rem;
+}
+
+::placeholder {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 0.125rem;
+}
+
+label {
+    height: 0px;
+    position: absolute;
+    visibility: hidden;
+}
+
+input {
+    flex-basis: 45%;
+    flex-grow: 0;
+    background-color: $camogreen;
+    outline: none;
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid $marigold;
+}
+
+form {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+.button {
+    flex-grow: 1;
+}
+}
+
+#commenttext {
+    height: 20rem;
+    flex-basis: 100%;
+    border: 2px solid $marigold;
+    margin-top: 2rem;
+}
+
+#homepage {
+
+    header {
+        background-image: url("home-image-1.jpg");
+        div {        
+            padding: 100px 50px;}
+        img {
+            flex: 0 0 40%;
+            position: relative;
+            top: 100px;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .adventure {
+        flex: 0 0 10%;
+        div{
+            background-color: $mudgreen;
+            width: 304px;
+            height: 304px;
+            img {
+                position: relative;
+                top: -25px;
+                right: -25px;
+            }
+        }
+}
+.quad div {
+    flex: 1 1 40%;
+    margin-right: 20px;
+}
+    .gray.quad div{
+        flex-basis: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;;
+        margin-right: 0px;
+        div {
+            background-color: $marigold;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-left: 25px;
+            margin-right: 25px;
+            display: flex;
+            img {
+                position: relative;
+            }
+        }
+    }
+    }
+
+#blog {
+    header {
+        height: 42.5rem;
+        background-image: url("blog-image-1.jpg");
+    }
+    form {
+        width: 1125px;
+    }
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+#leftalign {
+    width: 1125px;
+    border-bottom: 2px solid $mudgreen;
+    border-right: 2px solid $mudgreen;
+    padding-right: 0px;
+    #blogleft {
+        width: 100%;
+        padding-right: 50px;
+    }
+    h2{
+        position: relative;
+        top: -400px;
+    }
+}
+
+#headergreen {
+    margin-top: -400px;
+    margin-left: -166px;
+    width: 1100px;
+    height: 720.7px;
+    background-color: $mudgreen;
+    img {
+        width: 1075px;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+}
+
+#comments {
+    width: 1125px;
+    padding-right: 50px;
+    >div {
+        display: flex;
+        justify-content: space-between;
+        >div {
+            flex-basis: auto;
+            padding-left: 5%;
+        }
+    img {
+        flex-shrink: 0;
+        flex-grow: 0;
+        align-self: flex-start;
+    }
+
+    }
+}
+
+.yellowp {
+    color: $marigold;
+}
